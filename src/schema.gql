@@ -28,3 +28,7 @@ input UpdatePostInput {
   exampleField: Int
   id: Int!
 }
+
+type Subscription {
+  postAdded: Post!
+}
