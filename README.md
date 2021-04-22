@@ -22,6 +22,8 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
+- This proj is inspired by [this article](https://wanago.io/2021/02/15/api-nestjs-real-time-graphql-subscriptions/)
+
 ## RUN
 
 ```bash
