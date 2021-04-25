@@ -7,4 +7,12 @@ export class PostsService {
   create(createPostInput: CreatePostInput) {
     return { exampleField: 1992 };
   }
+
+  findAll() {
+    return `This action returns all posts`;
+  }
+
+  findOne(id: number) {
+    return `This action returns a #${id} post`;
+  }
 }

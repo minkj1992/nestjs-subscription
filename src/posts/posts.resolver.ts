@@ -12,9 +12,7 @@ import { CreatePostInput } from './dto/create-post.input';
 import { UpdatePostInput } from './dto/update-post.input';
 import { Inject } from '@nestjs/common';
 import { RedisPubSub } from 'graphql-redis-subscriptions';
-import { PUB_SUB } from 'src/pub-sub/pub-sub.module';
-
-const POST_ADDED_EVENT = 'postAdded';
+import { POST_ADDED_EVENT, PUB_SUB } from 'src/pub-sub/constants';
 
 @Resolver(() => Post)
 export class PostsResolver {
@@ -46,13 +44,13 @@ export class PostsResolver {
     return this.postsService.findOne(id);
   }
 
-  @Mutation(() => Post)
-  updatePost(@Args('updatePostInput') updatePostInput: UpdatePostInput) {
-    return this.postsService.update(updatePostInput.id, updatePostInput);
-  }
+  // @Mutation(() => Post)
+  // updatePost(@Args('updatePostInput') updatePostInput: UpdatePostInput) {
+  //   return this.postsService.update(updatePostInput.id, updatePostInput);
+  // }
 
-  @Mutation(() => Post)
-  removePost(@Args('id', { type: () => Int }) id: number) {
-    return this.postsService.remove(id);
-  }
+  // @Mutation(() => Post)
+  // removePost(@Args('id', { type: () => Int }) id: number) {
+  //   return this.postsService.remove(id);
+  // }
 }

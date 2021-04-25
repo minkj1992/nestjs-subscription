@@ -1,7 +1,6 @@
 import { Global, Module } from '@nestjs/common';
 import { RedisPubSub } from 'graphql-redis-subscriptions';
-
-export const PUB_SUB = 'PUB_SUB';
+import { PUB_SUB } from './constants';
 
 @Global()
 @Module({
