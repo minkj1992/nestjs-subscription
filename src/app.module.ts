@@ -12,6 +12,7 @@ import { PostsModule } from './posts/posts.module';
       autoSchemaFile: path.join(process.cwd(), 'src/schema.gql'),
       debug: false,
       installSubscriptionHandlers: true,
+      subscriptions: {},
     }),
     PubSubModule,
     PostsModule,
